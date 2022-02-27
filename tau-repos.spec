@@ -107,7 +107,7 @@ rm -f "$TMPRING"
 
 %files ostree
 %dir %{_sysconfdir}/ostree/remotes.d/
-%{_sysconfdir}/ostree/remotes.d/tau.conf
+%config(noreplace) %{_sysconfdir}/ostree/remotes.d/tau.conf
 
 %changelog
 * Sat Feb 26 2022 Jamie Lee <hello@jamiethalacker.dev> - 1.0.0-1
