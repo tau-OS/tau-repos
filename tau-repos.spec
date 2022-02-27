@@ -12,7 +12,7 @@ Source0:        %{name}-%{version}.tar.gz
 BuildArch:      noarch
 Provides:       tau-repos(%{version}) = %{release}
 
-Requires:       system-release(%{version})
+Requires:       system-release(%{dist_version})
 # Obsoletes:      tau-repos < 1.0.0
 Requires:       tau-gpg-keys = %{version}-%{release}
 
