@@ -97,7 +97,6 @@ rm -f "$TMPRING"
 
 %files
 %dir %{_sysconfdir}/yum.repos.d
-%dir %{_sysconfdir}/yum/vars/
 %config(noreplace) %{_sysconfdir}/yum.repos.d/tauOS.repo
 %{_sysconfdir}/yum/vars/taurelease
 
