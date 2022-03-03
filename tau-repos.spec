@@ -69,6 +69,7 @@ install -m 644 RPM-GPG-KEY* %{buildroot}%{_sysconfdir}/pki/rpm-gpg/
 # Install repo files
 install -d -m 755 %{buildroot}%{_sysconfdir}/yum.repos.d
 for file in tauOS*repo ; do
+   sed -i "s/\$taurelease/%{version}/g" $file
   install -m 644 $file %{buildroot}%{_sysconfdir}/yum.repos.d
 done
 
