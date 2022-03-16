@@ -10,6 +10,7 @@ variables:
     PACKAGE_VERSION: "1"
     PACKAGE_NAME: "tau-repos"
     PACKAGE_ARCH: "noarch"
+    TAUOS_VERSION: "1"
 
 stages:
   - build
