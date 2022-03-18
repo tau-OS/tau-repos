@@ -1,6 +1,8 @@
 # https://src.fedoraproject.org/rpms/fedora-repos/blob/f35/f/fedora-repos.spec. Lots of other things we could be doing but idc
 
-%define dist_version 35
+# TODO: Seperate GPG keys for different versions
+
+%define dist_version 36
 
 Summary:        tauOS Package Repositories
 Name:           tau-repos
