@@ -1,11 +1,11 @@
 # https://src.fedoraproject.org/rpms/fedora-repos/blob/f35/f/fedora-repos.spec. Lots of other things we could be doing but idc
 
-%define dist_version 35
+%define dist_version 36
 
 Summary:        tauOS Package Repositories
 Name:           tau-repos
-Version:        1
-Release:        1
+Version:        1.1
+Release:        0
 License:        GPLv3
 URL:            https://tauos.co
 Source0:        %{name}-%{version}.tar.gz
@@ -110,5 +110,7 @@ rm -f "$TMPRING"
 %config(noreplace) %{_sysconfdir}/ostree/remotes.d/tau.conf
 
 %changelog
+* Wed Mar 23 2022 Jamie Lee <jamie@innatical.com> - 1.1-0
+- Update for Fedora 36
 * Sat Feb 26 2022 Jamie Lee <hello@jamiethalacker.dev> - 1.0.0-1
 - Initial Release

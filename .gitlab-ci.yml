@@ -7,10 +7,10 @@ include:
     file: '/.update-repo-template.yml'
 
 variables:
-    PACKAGE_VERSION: "1"
+    PACKAGE_VERSION: "1.1"
     PACKAGE_NAME: "tau-repos"
     PACKAGE_ARCH: "noarch"
-    TAUOS_VERSION: "1"
+    TAUOS_VERSION: "1.1"
 
 stages:
   - build
