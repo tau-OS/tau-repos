@@ -4,8 +4,9 @@
 
 Summary:        tauOS Package Repositories
 Name:           tau-repos
-Version:        1.1
-Release:        3
+Version:        1
+Release:        1
+Epoch:          1
 License:        GPLv3
 URL:            https://tauos.co
 Source0:        README.md
@@ -15,7 +16,6 @@ Source4:        archmap
 Source5:        tauOS.repo
 
 Source10:       RPM-GPG-KEY-tauOS-1-primary
-Source11:       RPM-GPG-KEY-tauOS-1.1-primary
 
 BuildRequires:  gnupg
 BuildRequires:  sed
