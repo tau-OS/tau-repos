@@ -1,6 +1,6 @@
 [tauOS]
 name=tauOS $taurelease - $basearch
-baseurl=https://repo.fyralabs.com/tau$taurelease
+baseurl=https://repos.fyralabs.com/tau$taurelease
 enabled=1
 countme=1
 metadata_expire=7d
