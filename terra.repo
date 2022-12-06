@@ -1,0 +1,10 @@
+[terra]
+name=Terra 37
+baseurl=https://repos.fyralabs.com/terra37
+enabled=1
+countme=1
+metadata_expire=7d
+# We need to fix this, but rpm-ostree with gnome software is borked with this
+repo_gpgcheck=0
+type=rpm
+gpgcheck=0
