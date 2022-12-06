@@ -13,8 +13,10 @@ Source1:        LICENSE
 Source3:        tau.conf
 Source4:        archmap
 Source5:        tauOS.repo
+Source6:        terra.repo
 
 Source10:       RPM-GPG-KEY-tauOS-1-primary
+Source11:       RPM-GPG-KEY-Terra-37-primary
 
 BuildRequires:  gnupg
 BuildRequires:  sed
