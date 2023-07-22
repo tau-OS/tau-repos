@@ -1,10 +1,10 @@
 [terra]
-name=Terra 37
-baseurl=https://repos.fyralabs.com/terra37
+name=Terra 38
+baseurl=https://repos.fyralabs.com/terra38
 enabled=1
 countme=1
 metadata_expire=7d
 # We need to fix this, but rpm-ostree with gnome software is borked with this
 repo_gpgcheck=0
 gpgcheck=1
-gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-Terra-37-primary
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-Terra-38-primary

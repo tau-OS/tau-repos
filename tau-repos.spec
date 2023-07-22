@@ -1,11 +1,11 @@
 # https://src.fedoraproject.org/rpms/fedora-repos/blob/f35/f/fedora-repos.spec. Lots of other things we could be doing but idc
 
-%define dist_version 37
+%define dist_version 38
 
 Summary:        tauOS Package Repositories
 Name:           tau-repos
 Version:        1
-Release:        3%{?dist}
+Release:        4%{?dist}
 License:        GPLv3
 URL:            https://tauos.co
 Source0:        README.md
@@ -16,7 +16,7 @@ Source5:        tauOS.repo
 Source6:        terra.repo
 
 Source10:       RPM-GPG-KEY-tauOS-1-primary
-Source11:       RPM-GPG-KEY-Terra-37-primary
+Source11:       RPM-GPG-KEY-Terra-38-primary
 
 BuildRequires:  gnupg
 BuildRequires:  sed
@@ -35,7 +35,7 @@ tauOS package repository files for yum and dnf along with GPG public keys.
 Summary:        tauOS RPM keys
 
 %description -n tau-gpg-keys
-This package provides the RPM signature keys. 
+This package provides the RPM signature keys.
 
 %package ostree
 Summary:        OSTree specific files
@@ -121,7 +121,7 @@ install -pm 0644 %SOURCE0 README.md
 
 %files
 %doc README.md
-%license licenses/LICENSE 
+%license licenses/LICENSE
 %dir %{_sysconfdir}/yum.repos.d
 %config(noreplace) %{_sysconfdir}/yum.repos.d/tauOS.repo
 %{_sysconfdir}/yum/vars/taurelease
@@ -135,6 +135,9 @@ install -pm 0644 %SOURCE0 README.md
 %config(noreplace) %{_sysconfdir}/ostree/remotes.d/tau.conf
 
 %changelog
+* Fri Jul 21 2023 Lleyton Gray <lleyton@fyralabs.com> - 1-4
+- Bump for F38
+
 * Mon Oct 3 2022 Jaiden Riordan <jade@fyralabs.com> - 1.1-3
 - Bump for F37
 
