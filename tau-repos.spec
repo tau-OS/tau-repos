@@ -1,13 +1,13 @@
 # https://src.fedoraproject.org/rpms/fedora-repos/blob/f35/f/fedora-repos.spec. Lots of other things we could be doing but idc
 
-%define dist_version 38
+%define dist_version 39
 
 Summary:        tauOS Package Repositories
 Name:           tau-repos
 Version:        1
-Release:        4%{?dist}
+Release:        5%{?dist}
 License:        GPLv3
-URL:            https://tauos.co
+URL:            https://tau.fyralabs.com
 Source0:        README.md
 Source1:        LICENSE
 Source3:        tau.conf
@@ -16,7 +16,7 @@ Source5:        tauOS.repo
 Source6:        terra.repo
 
 Source10:       RPM-GPG-KEY-tauOS-1-primary
-Source11:       RPM-GPG-KEY-Terra-38-primary
+Source11:       RPM-GPG-KEY-Terra-39-primary
 
 BuildRequires:  gnupg
 BuildRequires:  sed
@@ -135,6 +135,9 @@ install -pm 0644 %SOURCE0 README.md
 %config(noreplace) %{_sysconfdir}/ostree/remotes.d/tau.conf
 
 %changelog
+* Mon Sep 4 2023 Lleyton Gray <lleyton@fyralabs.com> - 1-5
+- Bump for F39
+
 * Fri Jul 21 2023 Lleyton Gray <lleyton@fyralabs.com> - 1-4
 - Bump for F38
 
